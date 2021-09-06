@@ -16,7 +16,7 @@ composer require creativeorange/laravel-served-by
 
 ## Usage HTTP requests
 
-To allow CORS for all your routes, add the HandleCors middleware at the top of the $middleware property of app/Http/Kernel.php class:
+To allow Served By for all your routes, add the ServedBy middleware at the top of the $middleware property of app/Http/Kernel.php class:
 
 ```php
 protected $middleware = [
