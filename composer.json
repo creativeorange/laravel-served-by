@@ -1,0 +1,51 @@
+{
+  "name": "creativeorange/laravel-served-by",
+  "description": "Automatically set the Served By for requests in your Laravel Framework.",
+  "keywords": [
+    "creativeorange",
+    "served-by",
+    "laravel"
+  ],
+  "homepage": "https://github.com/creativeorange/served-by",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Creativeorange B.V.",
+      "email": "info@creativeorange.nl",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "illuminate/http": "^8.58",
+    "illuminate/support": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Creativeorange\\ServedBy\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Creativeorange\\ServedBy\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Creativeorange\\ServedBy\\ServedByServiceProvider"
+      ],
+      "aliases": {
+        "ServedBy": "Creativeorange\\ServedBy\\ServedByFacade"
+      }
+    }
+  }
+}
