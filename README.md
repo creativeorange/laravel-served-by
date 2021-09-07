@@ -39,13 +39,6 @@ If you use Flare, you can add the following to your job(s):
     }
 ```
 
-## Laravel Horizon
-When using Laravel Horizon, you can extend your Job to automatically tag the servername in Horizon:
-
-```php
-class JobName extends \Creativeorange\ServedBy\Jobs\HorizonServedBy
-```
-
 ## Configuration
 The defaults are set in config/served-by.php. Publish the config to copy the file to your own config:
 
