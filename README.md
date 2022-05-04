@@ -13,6 +13,7 @@ You can install the package via composer:
 ```bash
 composer require creativeorange/laravel-served-by
 ```
+For Laravel 8 or lower please install version 1.
 
 ## Usage HTTP requests
 
